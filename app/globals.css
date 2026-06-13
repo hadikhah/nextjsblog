@@ -1,0 +1,103 @@
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+
+/* EditorJS Dark Mode & Tweaks */
+.ce-block__content, .ce-toolbar__content {
+  max-width: 100% !important;
+}
+
+.ce-code__textarea, .cdx-math-input, .editorjs-codecup textarea, .editorjs-codecup {
+  direction: ltr !important;
+  text-align: left !important;
+  font-family: monospace !important;
+  background-color: #f1f5f9 !important;
+  color: #0f172a !important;
+  border-radius: 0.5rem !important;
+  padding: 1rem !important;
+}
+
+.ce-block[data-type="math"] .cdx-input {
+  direction: ltr !important;
+  text-align: left !important;
+  font-family: monospace !important;
+}
+
+.dark .ce-code__textarea, .dark .cdx-math-input, .dark .editorjs-codecup textarea, .dark .editorjs-codecup {
+  background-color: #0f111a !important;
+  color: #34d399 !important;
+  border-color: #1e293b !important;
+}
+
+/* Math input dark mode */
+.dark .ce-block[data-type="math"] .cdx-input {
+  color: #f8fafc !important;
+  background-color: #0f111a !important;
+  border-color: #1e293b !important;
+}
+
+/* Dark Mode Overrides for UI */
+.dark .ce-popover, .dark .ce-inline-toolbar, .dark .ce-toolbar__actions, .dark .ce-conversion-toolbar, .dark .cdx-settings-button {
+  background-color: #1e293b !important;
+  border-color: #334155 !important;
+  color: #f8fafc !important;
+}
+.dark .ce-popover__item-icon, .dark .ce-inline-tool, .dark .ce-conversion-tool__icon {
+  background-color: #334155 !important;
+  color: #f8fafc !important;
+  border-color: transparent !important;
+}
+.dark .ce-popover-item__title, .dark .ce-popover-item__label, .dark .ce-popover-item, .dark .ce-settings__button {
+  color: #f8fafc !important;
+}
+.dark .ce-popover__item:hover, .dark .ce-inline-tool:hover, .dark .cdx-settings-button:hover, .dark .ce-conversion-tool:hover, .dark .ce-settings__button:hover {
+  background-color: #334155 !important;
+  color: #fbbf24 !important; /* amber-400 */
+}
+.dark .ce-popover__item[data-item-name] .ce-popover-item__title {
+  color: #f8fafc !important;
+}
+.dark .ce-popover__item:hover[data-item-name] .ce-popover-item__title {
+  color: #fbbf24 !important;
+}
+.dark .ce-popover__item:hover .ce-popover__item-icon, .dark .ce-conversion-tool:hover .ce-conversion-tool__icon {
+  background-color: #475569 !important;
+}
+.dark .cdx-search-field {
+  background-color: #0f111a !important;
+}
+
+/* PrimeReact tweaks */
+.p-tabview .p-tabview-nav {
+  background: transparent !important;
+}
+.p-tabview-panels {
+  background: transparent !important;
+  color: inherit !important;
+}
+.dark .p-tabview .p-tabview-nav {
+  background: transparent !important;
+  border-color: #1e293b !important;
+}
+.dark .p-tabview .p-tabview-nav li .p-tabview-nav-link {
+  background: transparent !important;
+  color: #94a3b8 !important;
+  border-color: #1e293b !important;
+}
+.dark .p-tabview .p-tabview-nav li.p-highlight .p-tabview-nav-link {
+  color: #fbbf24 !important;
+  border-color: #fbbf24 !important;
+}
+.dark .p-tabview-panels {
+  background: transparent !important;
+  color: inherit !important;
+}
+.dark .p-inputtext {
+  background-color: #121217 !important;
+  color: #f8fafc !important;
+  border-color: #1e293b !important;
+}
+
+/* Fix popover padding in dark mode to not be white */
+.dark .ce-popover__items, .dark .ce-toolbar__settings-btn {
+  background-color: #1e293b !important;
+}

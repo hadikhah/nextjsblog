@@ -1,0 +1,8 @@
+{
+  "name": "DailyNotes",
+  "description": "A developer daily notes and blog platform",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
